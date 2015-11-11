@@ -1,0 +1,169 @@
+body, div, header, nav, ul, li, img, article, p, h1, h2, a, footer {
+	margin:0px;
+	padding:0px;
+	border:0px;
+	font-size:100%;
+	vertical-align:baseline;
+}
+
+*, *:before, *:after {
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+.clearfix:before, .clearfix:after {
+	content:"";
+	display:block;
+	clear:both;
+}
+
+body {
+	font-family:Helvetica,Arial,sans-serif;
+}
+
+.container {
+	width:80%;
+	margin:0px auto;
+	position:relative;
+}
+nav {
+	margin-top:15px;
+}
+
+nav ul {
+	list-style:none;
+}
+
+nav ul li {
+	width:25%;
+	display:inline-block;
+	float:left;
+	text-align:center;
+	padding:10px;
+	font-size:18px;
+	text-transform:uppercase;
+}
+
+nav ul li a {
+	text-decoration:none;
+	color:rgb(98, 129, 165);
+}
+
+header {
+	background-color:rgb(168, 208, 255);
+	overflow:hidden;
+	text-align:center;
+}
+
+img {
+	background-color:#ffffff;
+	width:300px;
+	margin-top:15px;
+	padding:12px 8px;
+	border-radius:5px;
+}
+
+#hero {
+	height:200px;
+	background-image:url(../img/sky.jpg);
+	background-size:cover;	
+	background-position:bottom;
+	background-attachment:fixed;	
+	/*position:absolute;*/
+}
+
+main {
+	background-color:#f1f1f1;
+	padding-bottom:70px;
+}
+
+article {
+	background-color:#ffffff;
+	padding:0 40px 60px;
+	width:80%;
+	float:right;
+	margin-bottom:40px;
+	position:relative;
+}
+
+article:before {
+	content:"";
+	display:block;
+	height:75px;
+	background-color:#ffffff;
+	width:100%;
+	position:absolute;
+	left:0;
+	top:-75px;
+	background-image:url(../img/mail.png);
+	background-repeat:repeat-x;
+}
+
+h1 {
+	padding-left:35px;
+	font-size:30px;
+}
+
+p{
+	font-size:14px;
+	line-height:1.4;
+	margin:10px 35px;
+}
+
+h2 {
+	margin-right:35px;
+	text-align:right;
+	font-family:Florence, cursive;
+}
+
+footer {
+	color:#AEAEAE;
+	background-color:#434343;
+	padding:30px;
+}
+
+.avatar {
+	width:20%;
+	position:absolute;
+	border:1px solid #e4e4e4;
+	border-radius:50%;
+	left:15%;
+	padding:10px;
+	background-color:#ddd;
+	transition:left 350ms ease-in-out;
+}
+
+.avatar:hover {
+	left:0%;
+}
+
+@media (max-width:400px) {
+	nav ul li {
+		width:100%;
+		display:block;
+	}
+	article {
+		width:98%;
+		display:block;
+	}
+}
+
+@media (max-width:900px) and (min-width:768px) {
+	header {
+		background-color:red;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
